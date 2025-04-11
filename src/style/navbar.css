@@ -25,6 +25,12 @@ button {
   border-radius: 30%;
   object-fit: cover;
 }
+.logo svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  object-fit: cover;
+}
 
 .menu {
   display: flex;

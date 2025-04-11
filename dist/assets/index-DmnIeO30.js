@@ -1,7 +1,4 @@
-
-export default function Header() {
-    const headerContent = document.createElement("header");
-    headerContent.innerHTML = `
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function r(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=r(e);fetch(e.href,t)}})();function n(){const a=document.createElement("header");return a.innerHTML=`
     <section class="Darkmode__container"> 
         <button id="theme-switch">
             <svg class="svg_black" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
@@ -28,30 +25,8 @@ export default function Header() {
             <i class="fa-solid fa-bars"></i>
         </div> -->
 
-    `;
-
-
-    setTimeout(() => {
-        const themeSwitch = document.getElementById('theme-switch');
-        let darkmode = localStorage.getItem('darkmode');
-
-        const enableDarkmode = () => {
-            document.body.classList.add('darkmode');
-            localStorage.setItem('darkmode', 'active');
-        };
-
-        const disableDarkmode = () => {
-            document.body.classList.remove('darkmode');
-            localStorage.setItem('darkmode', null);
-        };
-
-        if (darkmode === "active") enableDarkmode();
-
-        themeSwitch.addEventListener("click", () => {
-            darkmode = localStorage.getItem('darkmode');
-            darkmode !== "active" ? enableDarkmode() : disableDarkmode();
-        });
-    }, 0);
-
-    return headerContent;
-}
+    `,setTimeout(()=>{const o=document.getElementById("theme-switch");let r=localStorage.getItem("darkmode");const s=()=>{document.body.classList.add("darkmode"),localStorage.setItem("darkmode","active")},e=()=>{document.body.classList.remove("darkmode"),localStorage.setItem("darkmode",null)};r==="active"&&s(),o.addEventListener("click",()=>{r=localStorage.getItem("darkmode"),r!=="active"?s():e()})},0),a}document.querySelector("#app").innerHTML=`
+  <header></header>
+  <main></main>
+  <footer></footer>
+`;document.querySelector("header").appendChild(n());

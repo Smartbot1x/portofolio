@@ -1,4 +1,4 @@
-// main.js
+
 import './style/style.css'
 import Header from './pages/home.js'
 
