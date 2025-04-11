@@ -1,0 +1,15 @@
+@import url(/src/style/home.css);
+@import url(/src/style/darkmode.scss);
+@import url(/src/style/navbar.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  transition: background-image 0.5s ease;
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
