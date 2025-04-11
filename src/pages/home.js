@@ -11,7 +11,7 @@ export default function Header() {
     <!-- navsection -->
     <nav class="navbar">
     <div class="logo">
-            <a href="#">  <img src="./public/img/logo 2.png" alt=""></a>
+            <a href="#">   <img src="./public/img/logo2.png" alt=""></a>
         </div>
         <div class="menu">
             <div class="menu-links">
