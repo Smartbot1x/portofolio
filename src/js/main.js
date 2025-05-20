@@ -1,6 +1,6 @@
 
-import './style/style.css'
-import Header from './pages/home.js'
+import '../style/style.css'
+import Header from './home.js'
 
 
 document.querySelector('#app').innerHTML = `

@@ -7,26 +7,21 @@
     </section>
     <!-- navsection -->
     <nav class="navbar">
-    <div class="logo">
-            <a href="#">  <img src="./public/img/logo 2.png" alt=""></a>
+        <div class="logo">
+            <a href="#"><img src="./public/img/logo2.png" alt=""></a>
         </div>
         <div class="menu">
             <div class="menu-links">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-                <a href="#">projects</a>
+                <a href="../skill/index.html">Projects</a>
                 
-               
+                <select name="language" id="lang">
+                    <option value="en">En</option>
+                    <option value="dk">Dk</option>
+                </select>
             </div>
-           
         </div>
-      <!--   <div class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div> -->
-
-    `,setTimeout(()=>{const o=document.getElementById("theme-switch");let r=localStorage.getItem("darkmode");const s=()=>{document.body.classList.add("darkmode"),localStorage.setItem("darkmode","active")},e=()=>{document.body.classList.remove("darkmode"),localStorage.setItem("darkmode",null)};r==="active"&&s(),o.addEventListener("click",()=>{r=localStorage.getItem("darkmode"),r!=="active"?s():e()})},0),a}document.querySelector("#app").innerHTML=`
-  <header></header>
-  <main></main>
-  <footer></footer>
-`;document.querySelector("header").appendChild(n());
+        <a href="#top" class="go-top" data-go-top title="Go to Top"><ion-icon name="arrow-up"></ion-icon></a>
+    `,setTimeout(()=>{const o=document.getElementById("theme-switch");let r=localStorage.getItem("darkmode");const s=()=>{document.body.classList.add("darkmode"),localStorage.setItem("darkmode","active")},e=()=>{document.body.classList.remove("darkmode"),localStorage.setItem("darkmode",null)};r==="active"&&s(),o.addEventListener("click",()=>{r=localStorage.getItem("darkmode"),r!=="active"?s():e()})},0),a}export{n as H};
